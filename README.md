@@ -43,3 +43,38 @@ A full-stack task management application built with the MERN (MongoDB, Express.j
 - **dotenv** - Environment variables
 
 ## 📁 Project Structure
+
+mern-task-app/
+├── server/ # Backend
+│ ├── src/
+│ │ ├── config/
+│ │ │ └── db.js # Database configuration
+│ │ ├── controllers/
+│ │ │ └── taskController.js # Task CRUD operations
+│ │ ├── models/
+│ │ │ └── Task.js # Task schema
+│ │ └── routes/
+│ │ └── taskRoutes.js # API routes
+│ ├── server.js # Server entry point
+│ ├── .env # Environment variables
+│ └── package.json
+│
+└── client/ # Frontend
+├── src/
+│ ├── api/
+│ │ └── taskApi.js # API service layer
+│ ├── components/
+│ │ ├── TaskForm.jsx # Add task form
+│ │ ├── TaskList.jsx # Task list container
+│ │ ├── TaskItem.jsx # Individual task item
+│ │ └── LoadingSpinner.jsx # Loading indicator
+│ ├── pages/
+│ │ └── Home.jsx # Main page
+│ ├── App.jsx # Root component
+│ ├── App.css # Global styles
+│ ├── index.js # Entry point
+│ └── index.css # Base styles
+├── index.html
+├── vite.config.js # Vite configuration
+├── .env.local # Frontend environment variables
+└── package.json
