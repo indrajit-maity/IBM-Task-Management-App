@@ -11,7 +11,6 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 
-// ✅ 1. CORS Configuration
 app.use(cors({
     origin: '*', // For development only
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
